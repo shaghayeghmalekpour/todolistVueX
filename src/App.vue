@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-
+    <div class="container">
+      <Todos />
+    </div>
   </div>
 </template>
 
 <script>
-
+  import Todos from "./components/Todos.vue";
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-
+    Todos
   }
 }
 </script>
 
 <style>
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body{
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
+  background: #e8f7f0;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
 }
 </style>
